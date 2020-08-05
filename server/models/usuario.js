@@ -43,6 +43,13 @@ let usuarioSchema = new Schema({
     },
 })
 
+usuarioSchema.methods.toJSON = function() { //NO USAR FUNCION FLECHA PORQUE SE NECESITA USAR EL THIS
+    let user = this;
+    let userObject = user.toObject();
+    delete userObject.password
+
+    return userObject;
+}
 
 usuarioSchema.plugin(uniqueValidator, { message: '{PATH} debe ser unico' }) //Para manejar la estructura del error cuando un campo de la db deba ser unico
 

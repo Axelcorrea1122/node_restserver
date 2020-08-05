@@ -1,0 +1,1 @@
+"D:\Mongodb\Server\4.4\bin\mongod.exe" --dbpath="D:\data\db" =>comando para ejecutar mongodb en local
