@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json()) //Middlewares queutiliza el body-parser
 
-app.use(require('./routes/usuario')) //para importa el archivo que tiene las rutas de usuario
+app.use(require('./routes/index')) //para importa el archivo que tiene las rutas de usuario
 
 
 
