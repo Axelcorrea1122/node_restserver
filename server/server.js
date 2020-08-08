@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const path = require('path') //paquete para resolver paths ya viene dentro de node
 
 
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
